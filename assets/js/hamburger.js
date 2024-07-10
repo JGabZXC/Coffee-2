@@ -14,8 +14,11 @@ hamburger.addEventListener('click', () => {
 
 const navMenuList = document.querySelectorAll('.nav-menu li');
 
+
+
 navMenuList.forEach(li => {
     li.addEventListener('click', () => {
+        document.body.style.position = 'static';
         hamburger.classList.remove('active');
         navMenu.classList.remove('active');
     });
